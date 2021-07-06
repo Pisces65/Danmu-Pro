@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹幕Pro</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-wrapper">
+            <canvas id="J_danmuCanvas"></canvas>
+            <video src="./videos/[SweetSub] Super Cub - 04 [WebRip][1080P][AVC 8bit][CHS].mp4"  id="J_danmuVideo" controls></video>
+        </div>
+        <div class="tool-box">
+            <input type="text" class="danmu-input" />
+            <button class="danmu-button">✈发送</button>
+            <button class="play" onclick="play()">播放</button>
+            <input type="color" class="color-input" />
+            <label for="fontsize-input">字体大小:</label>
+            <input type="text" class="fontsize-input" value="5" id="fontsize-input">
+        </div>
+    </div>
+    <script src="./js/danmu/danmu.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/danmu/index.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        function play(){
+            const _video = document.getElementById("J_danmuVideo");
+            _video.play();
+        }
+    </script>
+</body>
+</html>
